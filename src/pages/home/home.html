@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home">
+  <ion-card ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">  
+    <img src="{{item.better_featured_image.source_url}}" />
+    <ion-card-content>
+      <ion-card-title>
+        {{item.title.rendered}}
+      </ion-card-title>
+      
+      <div class="text" [innerHTML]="item.excerpt.rendered"></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

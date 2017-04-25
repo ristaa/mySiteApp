@@ -1,0 +1,35 @@
+.home{
+	.card{
+		width: 100%;
+
+		@media(min-width: 768px){
+			width: 50%;
+			padding: 15px;
+			float: left;
+		}
+
+		@media(min-width: 992px){
+			width: 33.33333%;
+			padding: 15px;
+			float: left;
+		}
+
+		@media(min-width: 1200px){
+			width: 25%;
+			padding: 15px;
+			float: left;
+		}
+
+		.card-title{
+			white-space: initial;
+		}
+
+		.text{		
+			white-space: initial;
+		}
+	}
+}
+
+.tabs-md .tabbar{
+	background: color($colors, light);
+}
